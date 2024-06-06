@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="shortcut icon" href="../redessociais/logosite/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/redessociais/logosite/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <header>
             <div class="logo">
-                <a href="../pagprincipal.html">
+                <a href="src/pagprincipal.html">
                     <h1>CH <span>IMPORTS</span></h1>
                 </a>
             </div>
@@ -44,7 +44,7 @@
             sessionStorage.setItem('usuario', JSON.stringify(usuario)); // Armazenar usuário no localStorage
             sessionStorage.setItem('loggedIn', 'true'); // Definir status de login como true
             alert('Cadastro bem-sucedido!');
-            window.location.href = '../pagprincipal.html'; // Redirecionar para a página principal
+            window.location.href = 'src/pagprincipal.html'; // Redirecionar para a página principal
         } else {
             alerta.innerText = 'As senhas não coincidem.';
             alerta.style.display = 'block';
